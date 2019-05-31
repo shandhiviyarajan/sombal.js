@@ -2,5 +2,5 @@
 A lazy loader plugin ;) written in Javascript
 
 ## Usage of "sombal.js"
-&lt;img src="atinypic-blur.jpg" data-src="yourimage.jpg" class="sombal"/&gt;
+&lt;img src="any-tiny-pic-blur.jpg" data-src="yourimage.jpg" class="sombal"/&gt;
   
