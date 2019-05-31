@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple lazy loading plugin</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            padding: 30px 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .main-image {
+            width: 600px;
+            margin: 0 auto;
+
+        }
+
+        .main-image img {
+            width: 100%;
+
+            -webkit-transition: opacity 0.3s ease-in;
+            -moz-transition: opacity 0.3s ease-in;
+            -ms-transition: opacity 0.3s ease-in;
+            -o-transition: opacity 0.3s ease-in;
+            transition: opacity 0.3s ease-in;
+        }
+
+        .how-to-use {
+            margin: 0 auto;
+            max-width: 600%;
+            width: 100%;
+
+        }
+
+        .how-to-use h2 {
+            text-align: center;
+        }
+
+        .sombal {
+            filter: blur(5px);
+        }
+    </style>
+
+</head>
+<body>
+
+
+<main>
+
+    <div class="how-to-use">
+        <h2>
+            Usage of "sombal.js"
+        </h2>
+        <pre style="    text-align: center;">
+  <code>
+   <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span
+           class="attributecolor" style="color:red"> data-src<span class="attributevaluecolor" style="color:mediumblue">="yourimage.jpg"</span> class<span
+           class="attributevaluecolor" style="color:mediumblue">="sombal"</span> <span class="tagcolor"
+                                                                                       style="color:mediumblue">/&gt;</span></span>
+  </code>
+</pre>
+    </div>
+    <section class="main-image">
+
+        <img data-src="ella-zipline.jpg" class="sombal" alt="">
+        <p>
+            Zipline - Ella Sri Lanka
+        </p>
+    </section>
+</main>
+
+
+<script src="plugin.js" type="text/javascript"></script>
+</body>
+</html>
